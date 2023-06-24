@@ -10,6 +10,8 @@ import { LoginComponent } from './components/login/login.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { EncontradoSingleComponent } from './components/encontrado-single/encontrado-single.component';
 import { EncontradosComponent } from './components/encontrados/encontrados.component';
+import { AcercadeComponent } from './components/acercade/acercade.component';
+import { CrearreporteComponent } from './components/crearreporte/crearreporte.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { EncontradosComponent } from './components/encontrados/encontrados.compo
     MainComponent,
     LoginComponent,
     EncontradosComponent,
-    EncontradoSingleComponent
+    EncontradoSingleComponent,
+    AcercadeComponent,
+    CrearreporteComponent
   ],
   imports: [
     BrowserModule,

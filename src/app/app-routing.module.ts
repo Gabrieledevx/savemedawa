@@ -4,12 +4,16 @@ import { MainComponent } from './components/main/main.component';
 import { LoginComponent } from './components/login/login.component';
 import { EncontradosComponent } from './components/encontrados/encontrados.component';
 import { EncontradoSingleComponent } from './components/encontrado-single/encontrado-single.component';
+import { AcercadeComponent } from './components/acercade/acercade.component';
+import { CrearreporteComponent } from './components/crearreporte/crearreporte.component';
 
 const routes: Routes = [
   { path: 'main', component: MainComponent },
   { path: 'login', component: LoginComponent},
   {path: 'encontrados', component: EncontradosComponent},
-  {path: 'single', component: EncontradoSingleComponent},
+  {path: 'anim-encontrado', component: EncontradoSingleComponent},
+  {path: 'acercade', component: AcercadeComponent},
+  {path: 'crearreporte', component: CrearreporteComponent},
   {path: '', redirectTo: '/main', pathMatch: 'full'}
 ];
 

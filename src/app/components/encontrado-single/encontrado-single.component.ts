@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./encontrado-single.component.css']
 })
 export class EncontradoSingleComponent {
-
+  dg01: string = 'assets/dg01.jpg';
 }
