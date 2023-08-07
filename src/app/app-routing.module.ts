@@ -6,6 +6,7 @@ import { EncontradosComponent } from './components/encontrados/encontrados.compo
 import { EncontradoSingleComponent } from './components/encontrado-single/encontrado-single.component';
 import { AcercadeComponent } from './components/acercade/acercade.component';
 import { CrearreporteComponent } from './components/crearreporte/crearreporte.component';
+import { ListadoComponent } from './components/listado/listado.component';
 
 const routes: Routes = [
   { path: 'main', component: MainComponent },
@@ -14,6 +15,7 @@ const routes: Routes = [
   {path: 'anim-encontrado', component: EncontradoSingleComponent},
   {path: 'acercade', component: AcercadeComponent},
   {path: 'crearreporte', component: CrearreporteComponent},
+  {path: 'listado', component: ListadoComponent},
   {path: '', redirectTo: '/main', pathMatch: 'full'}
 ];
 

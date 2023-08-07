@@ -1,6 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
 /* Base */
-@import '~bootstrap-icons/font/bootstrap-icons.css';
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
 body {
     line-height: 1.7;
     color: #8c92a0;
@@ -50,34 +53,7 @@ body {
       opacity: 1;
       visibility: visible; }
   
-  .btn {
-    text-transform: uppercase;
-    position: relative;
-    -webkit-transition: 0.2s all ease-in-out !important;
-    -o-transition: 0.2s all ease-in-out !important;
-    transition: 0.2s all ease-in-out !important;
-    top: 0;
-    letter-spacing: .05em; }
-    .btn:hover, .btn:active, .btn:focus {
-      outline: none;
-      -webkit-box-shadow: none !important;
-      box-shadow: none !important; }
-    .btn.btn-secondary {
-      background-color: #e6e7e9;
-      border-color: #e6e7e9;
-      color: #000; }
-    .btn.btn-sm {
-      font-size: 14px !important;
-      padding: 10px 20px !important; }
-    .btn.btn-primary {
-      font-size: 17px;
-      font-weight: 300;
-      letter-spacing: .2em; }
-    .btn:hover {
-      -webkit-box-shadow: 0 5px 20px -7px rgba(0, 0, 0, 0.9) !important;
-      box-shadow: 0 5px 20px -7px rgba(0, 0, 0, 0.9) !important;
-      top: -2px; }
-  
+ 
   .form-control {
     height: 43px; }
     .form-control:active, .form-control:focus {
@@ -614,16 +590,7 @@ body {
   
   .block-7 .form-control {
     padding-right: 96px; }
-  
-  .block-7 .btn {
-    position: absolute;
-    width: 80px;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    right: 3px; }
-  
+ 
   .block-8 .post-meta {
     color: #c4c7ce; }
   
