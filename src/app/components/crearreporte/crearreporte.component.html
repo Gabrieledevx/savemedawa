@@ -6,7 +6,7 @@
         </div>
         <div class="col-md-7">
 
-          <form action="#" method="post">
+          <form action="#" method="post" (submit)="enviarReporte($event)">
             
             <div class="p-3 p-lg-5 border">
               <div class="form-group row">
@@ -19,6 +19,7 @@
                   <input type="text" class="form-control" id="c_lname" name="c_lname">
                 </div>
               </div>
+             
               <div class="form-group row">
                 <div class="col-md-12">
                   <label for="c_email" class="text-black">Email de rescatista<span class="text-danger">*</span></label>
@@ -35,26 +36,37 @@
               <div class="form-group row">
                 <div class="col-md-12">
                   <label for="c_message" class="text-black">Descripción del rescate</label>
-                  <textarea name="c_message" id="c_message" cols="30" rows="7" class="form-control"></textarea>
+                  <textarea name="c_message" id="c_message" cols="30" rows="2" class="form-control"></textarea>
                 </div>
               </div>
 
-              <div class="form-group row">
+              <!-- <div class="form-group row">
                 <div class="col-md-12">
                   <label for="c_image" class="text-black">Ingrese imagen de rescate</label>
                   <input type="file" class="form-control-file" id="c_image" name="c_image">
                 </div>
-              </div>
+              </div> -->
 
               <div class="form-group row">
                 <div class="col-lg-12">
-                  <input type="submit" class="btn btn-primary btn-lg btn-block" value="Generar reporte">
+                  <input type="submit" class="btn btn-primary btn-lg btn-block" value="Enviar reporte">
                 </div>
+              </div>
+
+              <div *ngIf="registroExitoso" class="alert alert-success text-white mt-4">
+                <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current shrink-0 h-6 w-6" fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                <span>Rescate registrado exitosamente. </span>
+              </div>
+
+              <div *ngIf="registroFallido" class="alert alert-error text-white mt-4">
+                <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current shrink-0 h-6 w-6" fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                <span>Error! No se ha podido completar el registro.</span>
               </div>
             </div>
           </form>
         </div>
-        <div class="col-md-5 ml-auto">
+        
+        <div class="col-md-5 ml-auto mt-5">
           <div class="p-4 border mb-3">
             <span class="d-block text-primary h6 text-uppercase">Atención</span>
             <p class="mb-0">Es necesario ingresar los datos correctamente, tomesé su tiempo para no cometer errores</p>
@@ -71,4 +83,8 @@
         </div>
       </div>
     </div>
+
+    <!-- Agregar aquí el mensaje de confirmación -->
+  
+
   </div>

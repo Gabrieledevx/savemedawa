@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 
-export class GetanimalsService {
+export class GetrescatesService {
 
   private apiUrl = 'https://localhost:7107/api'; // URL de tu API
 
@@ -14,11 +14,11 @@ export class GetanimalsService {
 
   getDatos(): Observable<any> {
     
-    return this.http.get(`${this.apiUrl}/Animales`);
+    return this.http.get(`${this.apiUrl}/rescates`);
     
   }
 
   postDatos(datos: any): Observable<any> {
-    return this.http.post(`${this.apiUrl}/Animales`, datos);
+    return this.http.post(`${this.apiUrl}/rescates`, datos);
   }
 }
