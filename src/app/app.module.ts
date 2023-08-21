@@ -13,6 +13,7 @@ import { AcercadeComponent } from './components/acercade/acercade.component';
 import { CrearreporteComponent } from './components/crearreporte/crearreporte.component';
 import { ListadoComponent } from './components/listado/listado.component';
 import { HttpClientModule } from '@angular/common/http';
+import { RegistrarseComponent } from './components/registrarse/registrarse.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { HttpClientModule } from '@angular/common/http';
     AcercadeComponent,
     CrearreporteComponent,
     ListadoComponent,
+    RegistrarseComponent,
   ],
   imports: [
     BrowserModule,
