@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { GetrescatesService } from 'src/app/services/rescates.service';
+import { GetanimalsService } from 'src/app/services/getanimals.service';
 
 
 @Component({
@@ -11,7 +11,7 @@ import { GetrescatesService } from 'src/app/services/rescates.service';
 export class ListadoComponent implements OnInit{
   datos: any[] = []; // Variable para almacenar los datos de la API
 
-  constructor(private apiService: GetrescatesService) { }
+  constructor(private apiService: GetanimalsService) { }
 
   ngOnInit() {
     this.apiService.getDatos().subscribe(data => {

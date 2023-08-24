@@ -5,7 +5,6 @@ import { Observable } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
-
 export class GetanimalsService {
 
   private apiUrl = 'https://localhost:7107/api'; // URL de tu API
@@ -14,11 +13,11 @@ export class GetanimalsService {
 
   getDatos(): Observable<any> {
     
-    return this.http.get(`${this.apiUrl}/Animales`);
+    return this.http.get(`${this.apiUrl}/Animals`);
     
   }
 
   postDatos(datos: any): Observable<any> {
-    return this.http.post(`${this.apiUrl}/Animales`, datos);
+    return this.http.post(`${this.apiUrl}/Animals`, datos);
   }
 }

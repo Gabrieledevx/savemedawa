@@ -1,9 +1,4 @@
-/* This is a TypeScript class that handles the creation and submission of a rescue report form. */
 import { Component } from '@angular/core';
-import { RescateService} from './../../services/rescatepost.service';
-import { Rescatepost } from 'src/app/models/rescatepost';
-import { getUniqueID } from 'src/app/services/custom.functions';
-
 
 @Component({
   selector: 'app-crearreporte',
@@ -12,6 +7,7 @@ import { getUniqueID } from 'src/app/services/custom.functions';
 })
 
 export class CrearreporteComponent {
+<<<<<<< HEAD
   
   formulario = {
     idrescate: '',
@@ -81,7 +77,7 @@ export class CrearreporteComponent {
         },3000);
       });
   }
+=======
+>>>>>>> parent of 910e8a4 (add folder services and post features)
 
 }
-
-
