@@ -10,7 +10,9 @@ import { getUniqueID } from 'src/app/services/custom.functions';
   templateUrl: './crearreporte.component.html',
   styleUrls: ['./crearreporte.component.css']
 })
+
 export class CrearreporteComponent {
+  
   formulario = {
     idrescate: '',
     nombreDeRescatista: '',
@@ -51,6 +53,7 @@ export class CrearreporteComponent {
       .subscribe(response => {
         this.registroExitoso = true;
         this.registroFallido = false;
+        
         console.log('Rescate registrado:', response);
         console.log('data ->', nuevoRescate);
 

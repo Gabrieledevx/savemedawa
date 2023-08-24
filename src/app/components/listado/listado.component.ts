@@ -7,6 +7,7 @@ import { GetrescatesService } from 'src/app/services/rescates.service';
   templateUrl: './listado.component.html',
   styleUrls: ['./listado.component.css']
 })
+
 export class ListadoComponent implements OnInit{
   datos: any[] = []; // Variable para almacenar los datos de la API
 
